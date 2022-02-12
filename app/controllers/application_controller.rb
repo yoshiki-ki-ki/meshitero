@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
   
   #サインイン後にaboutへ遷移
   def after_sign_in_path_for(resource)
-    about_path
+    post_images_path
   end
   
   #サインアウト後にaboutへ遷移
